@@ -1,5 +1,20 @@
-<div class="show-warper">
+<div class="show-warper" data-controller="battle">
 
-  <div></div>
+  <div class="armies">
+
+    <div class="army-good left">
+      <div class="soldier-good">
+      </div>
+    </div>
+
+    <div class="army-evil right">
+      <div class="soldier-evil">
+        <%# <%= image_tag("orc.png", width: 50, height: 50, :class => "img-fluid") %>
+      </div>
+    </div>
+
+  </div>
 
 </div>
+
+<script> ScrollReveal().reveal('.soldier', { interval: 0.05, container: '.armies' } ); </script>

@@ -1,5 +1,26 @@
 .show-warper {
   background-color: black;
-  display: flex;
   height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.armies {
+  display: flex;
+
+  .left {
+    flex: 5;
+    background: red;
+    height: 400px;
+    width: 400px;
+  }
+
+  .right {
+    flex: 5;
+    background: blue;
+    height: 400px;
+    width: 400px;
+  }
 }
