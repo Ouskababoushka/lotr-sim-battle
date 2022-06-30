@@ -59,19 +59,24 @@ export default class extends Controller {
     console.log(whoWinsTheWar(epicBattle));
 
     console.log(sumGood)
+    console.log(sumEvil)
 
     const armyGood = document.querySelector(".soldier-good")
     for (let i = 0; i < sumGood; i++ ) {
       const img = document.createElement('img')
-      img.src = "../../../app/assets/images/elf.png"
+      img.src = "https://cdn-icons-png.flaticon.com/512/1618/1618867.png"
+      img.height = 50;
+      img.width = 50;
       armyGood.appendChild(img)
     }
 
     const armyEvil = document.querySelector(".soldier-evil")
     for (let i = 0; i < sumEvil; i++ ) {
       const img = document.createElement('img')
-      img.src = "../../../app/assets/images/orc.png"
-      armyGood.appendChild(img)
+      img.src = "https://cdn-icons-png.flaticon.com/512/1615/1615645.png"
+      img.height = 50;
+      img.width = 50;
+      armyEvil.appendChild(img)
     }
 
 
